@@ -245,14 +245,14 @@ Kernel:
 EOF
 
 # Set cmdline
-zfs set org.zfsbootmenu:commandline="rw quiet nowatchdog rd.vconsole.keymap=fr zswap.enabled=0" zroot/ROOT/"$root_dataset"
+zfs set org.zfsbootmenu:commandline="rw quiet nowatchdog rd.vconsole.keymap=it zswap.enabled=0" zroot/ROOT/"$root_dataset"
 
 # Generate ZBM
 print 'Generate zbm'
 arch-chroot /mnt /bin/bash -xe <<"EOF"
 
   # Export locale
-  export LANG="fr_FR.UTF-8"
+  export LANG="it_IT.UTF-8"
 
   # Generate zfsbootmenu
   generate-zbm
