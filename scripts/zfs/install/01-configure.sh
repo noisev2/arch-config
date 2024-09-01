@@ -61,7 +61,8 @@ partition () {
     
     # ZFS part
     print "Creating ZFS part"
-    sgdisk -n3:0:0 -t3:bf01 "$DISK"
+    #sgdisk -n3:0:0 -t3:bf01 "$DISK"
+    sgdisk -n2:0:0 -t2:bf01 "$DISK"
     
     # Inform kernel
     partprobe "$DISK"
@@ -83,7 +84,8 @@ zfs_passphrase () {
 
 create_pool () {
     # ZFS part
-    ZFS="$DISK-part3"
+    #ZFS="$DISK-part3"
+    ZFS="$DISK-part2"
     
     # Create ZFS pool
     print "Create ZFS pool"
