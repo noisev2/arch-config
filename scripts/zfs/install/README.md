@@ -55,3 +55,10 @@ $ pastebinit -b sprunge.us install.log
 $ pacman -S dracut
 $ lsinitrd /efi/EFI/ZBM/*
 ```
+
+### Post Install - Gnome
+```bash
+$ pacman -S broadcom-wl-dkms networkmanager gnome firefox
+$ systemctl enable NetworkManager
+$ systemctl enable gdm
+```
