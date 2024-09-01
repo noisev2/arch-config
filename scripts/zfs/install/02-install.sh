@@ -38,7 +38,7 @@ pacstrap /mnt       \
   efibootmgr        \
   vim               \
   git               \
-  ansible           \
+#  ansible           \
   iwd               \
   wpa_supplicant
 
