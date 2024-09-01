@@ -6,6 +6,7 @@ Boot latest archiso
 $ loadkeys it
 
 # Init ZFS module and install git
+# This is necessary only if the archiso doesn't provide zfs tools; if yes, you can skip
 $ curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash
 
 # Get install scripts
