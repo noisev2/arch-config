@@ -9,7 +9,7 @@ $ loadkeys it
 $ curl -s https://raw.githubusercontent.com/eoli3n/archiso-zfs/master/init | bash
 
 # Get install scripts
-$ git clone https://github.com/eoli3n/arch-config
+$ git clone https://github.com/noisev2/arch-config
 $ cd arch-config/scripts/zfs/install
 $ ./01-configure.sh
 $ ./02-install.sh
