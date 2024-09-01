@@ -26,7 +26,7 @@ root_dataset=$(cat /tmp/root_dataset)
 print "Sort mirrors"
 systemctl start reflector
 
-# Install
+# Install ; by default there was ansible package. i removed it
 print "Install Arch Linux"
 pacstrap /mnt       \
   base              \
@@ -38,7 +38,6 @@ pacstrap /mnt       \
   efibootmgr        \
   vim               \
   git               \
-#  ansible           \
   iwd               \
   wpa_supplicant
 
